@@ -6,7 +6,7 @@ function [ir,Omeg] = iresponse_zeros_signs(Phi,Sigma,hor,lag,var_pos,f,sr,draws,
 % References: 
 % Arias, J. E., Rubio-Ram?rez, J. F. and Waggoner, D. F.: 2018, Inference
 % Based on SVARs Identified with Sign and Zero Restrictions: Theory and
-% Applications, Econometrica 86, 685–720. 
+% Applications, Econometrica 86, 685720. 
 % Binning, A.: 2013, Underidentified SVAR models: A framework for combining
 % short and long-run restrictions with sign-restrictions, Working Paper
 % 2013/14, Norges Bank.  

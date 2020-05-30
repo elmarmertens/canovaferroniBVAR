@@ -5,7 +5,7 @@ function [ir,Omeg] = iresponse_sign(Phi,Sigma,hor,signrestriction,cont)
 % restrictions on the endogenous variables
 % Reference: Rubio-Ramirez, J. F., Waggoner, D. F. and Zha, T.: 2010,
 % Structural Vector Autoregresions: Theory of Identification and Algorithms
-% for Inference, Review of Economic Studies 77(2), 665–696.
+% for Inference, Review of Economic Studies 77(2), 665696.
 
 % Inputs:
 % - Phi, AR parameters of the VAR

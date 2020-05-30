@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+\usepackage{exscale, xspace, setspace, ifthen}
+\usepackage{amsmath, amsbsy, amsfonts, dcolumn, booktabs} 
+\usepackage{afterpage,lastpage}
+\usepackage{lscape}
+\usepackage{graphicx,rotating,hyperref}
+\usepackage[latin1]{inputenc}
+\usepackage{listings}
+\usepackage{a4wide}
+\newcommand*{\titlecaveat}[1]{\texttt{-----------------------------\\ #1 \\-----------------------------}}
+
+\newcounter{XYZs}
+\newcommand*{\XYZ}[1][XYZ]{\fbox{\texttt{\textbf{#1}}}\xspace\addtocounter{XYZs}{1}}
+\newcommand*{\marXYZ}[1][XYZ]{\XYZ[#1]\marginpar{\fbox{\texttt{CHECK}}}}
+\newcommand*{\ccol}[1]{\multicolumn{1}{c}{#1}}
+\newcommand*{\rcol}[1]{\multicolumn{1}{r}{#1}}
+\newcommand*{\lcol}[1]{\multicolumn{1}{l}{#1}}
+\newcolumntype{.}[1]{D{.}{.}{#1}}
+
+\lstset{numbers = left, escapechar = {}, numberstyle = \tiny, basicstyle=\ttlisting, breaklines = true, commentstyle = \commentlisting, showstringspaces = true, keywordstyle = \keywordlisting}
+\newfont{\ttlisting}{cmtt10 scaled 900}
+\newfont{\commentlisting}{cmsl10 scaled 800}
+\newfont{\keywordlisting}{cmb10 scaled 900}
+
+\newcommand*{\inputLISTING}[2]{\section*{#2}\addcontentsline{toc}{section}{#2}\lstinputlisting{#1}\vspace{2\baselineskip}}
+
+\newcommand*{\tttELMARmail}{\texttt{em@elmarmertens.com}}
+\newcommand*{\linkELMARmail}{mailto:em@elmarmertens.com}
+\newcommand*{\linkELMARmailRE}[1]{mailto:em@elmarmertens.com?subject=#1}
+\date{\today}
+\author{\thanks{For correspondence: Elmar Mertens. email \href{\linkELMARmail}{\tttELMARmail}.}}
+\title{\titlecaveat{XXX}}
+\begin{document}
+% \maketitle
+\tableofcontents
+\part*{CODE}
+% \newpage
+\pagestyle{headings}
+% \newpage
+\renewcommand*{\thesection}{}
+\lstset{language = MATLAB}
+% \inputLISTING{XXX}
+% \end{document} 
+\inputLISTING{v4.1/IC.m}{v4.1/IC.m}
+\inputLISTING{v4.1/OrderingIndexes.m}{v4.1/OrderingIndexes.m}
+\inputLISTING{v4.1/YXB_.m}{v4.1/YXB\_.m}
+\inputLISTING{v4.1/blp_ml.m}{v4.1/blp\_ml.m}
+\inputLISTING{v4.1/blp_opt_hyperpara.m}{v4.1/blp\_opt\_hyperpara.m}
+\inputLISTING{v4.1/bvar.m}{v4.1/bvar.m}
+\inputLISTING{v4.1/bvar_max_hyper.m}{v4.1/bvar\_max\_hyper.m}
+\inputLISTING{v4.1/bvar_ml.m}{v4.1/bvar\_ml.m}
+\inputLISTING{v4.1/bvar_opt_hyperpara.m}{v4.1/bvar\_opt\_hyperpara.m}
+\inputLISTING{v4.1/cforecasts.m}{v4.1/cforecasts.m}
+\inputLISTING{v4.1/cforecasts2.m}{v4.1/cforecasts2.m}
+\inputLISTING{v4.1/checkrestrictions.m}{v4.1/checkrestrictions.m}
+\inputLISTING{v4.1/colorspace.m}{v4.1/colorspace.m}
+\inputLISTING{v4.1/demean.m}{v4.1/demean.m}
+\inputLISTING{v4.1/directmethods.m}{v4.1/directmethods.m}
+\inputLISTING{v4.1/distinguishable_colors.m}{v4.1/distinguishable\_colors.m}
+\inputLISTING{v4.1/fetchData.m}{v4.1/fetchData.m}
+\inputLISTING{v4.1/fevd.m}{v4.1/fevd.m}
+\inputLISTING{v4.1/findP.m}{v4.1/findP.m}
+\inputLISTING{v4.1/findQs.m}{v4.1/findQs.m}
+\inputLISTING{v4.1/forecasts.m}{v4.1/forecasts.m}
+\inputLISTING{v4.1/generateDraw.m}{v4.1/generateDraw.m}
+\inputLISTING{v4.1/generateQ.m}{v4.1/generateQ.m}
+\inputLISTING{v4.1/histdecomp.m}{v4.1/histdecomp.m}
+\inputLISTING{v4.1/histdecomposition.m}{v4.1/histdecomposition.m}
+\inputLISTING{v4.1/iresponse.m}{v4.1/iresponse.m}
+\inputLISTING{v4.1/iresponse_longrun.m}{v4.1/iresponse\_longrun.m}
+\inputLISTING{v4.1/iresponse_proxy.m}{v4.1/iresponse\_proxy.m}
+\inputLISTING{v4.1/iresponse_sign.m}{v4.1/iresponse\_sign.m}
+\inputLISTING{v4.1/iresponse_sign_narrative.m}{v4.1/iresponse\_sign\_narrative.m}
+\inputLISTING{v4.1/iresponse_zeros_signs.m}{v4.1/iresponse\_zeros\_signs.m}
+\inputLISTING{v4.1/isOctave.m}{v4.1/isOctave.m}
+\inputLISTING{v4.1/jacob_bvar.m}{v4.1/jacob\_bvar.m}
+\inputLISTING{v4.1/kf_dk.m}{v4.1/kf\_dk.m}
+\inputLISTING{v4.1/kfilternan.m}{v4.1/kfilternan.m}
+\inputLISTING{v4.1/lagX.m}{v4.1/lagX.m}
+\inputLISTING{v4.1/lag_crit_var.m}{v4.1/lag\_crit\_var.m}
+\inputLISTING{v4.1/lyapunov_symm.m}{v4.1/lyapunov\_symm.m}
+\inputLISTING{v4.1/matrictint.m}{v4.1/matrictint.m}
+\inputLISTING{v4.1/max_fevd.m}{v4.1/max\_fevd.m}
+\inputLISTING{v4.1/mniw_log_dnsty.m}{v4.1/mniw\_log\_dnsty.m}
+\inputLISTING{v4.1/ols_reg.m}{v4.1/ols\_reg.m}
+\inputLISTING{v4.1/p2p.m}{v4.1/p2p.m}
+\inputLISTING{v4.1/pc_T.m}{v4.1/pc\_T.m}
+\inputLISTING{v4.1/plot_all_irfs_.m}{v4.1/plot\_all\_irfs\_.m}
+\inputLISTING{v4.1/plot_frcst_.m}{v4.1/plot\_frcst\_.m}
+\inputLISTING{v4.1/plot_irfs_.m}{v4.1/plot\_irfs\_.m}
+\inputLISTING{v4.1/plot_sdcmp_.m}{v4.1/plot\_sdcmp\_.m}
+\inputLISTING{v4.1/quer.m}{v4.1/quer.m}
+\inputLISTING{v4.1/rand_inverse_wishart.m}{v4.1/rand\_inverse\_wishart.m}
+\inputLISTING{v4.1/reorderVAR.m}{v4.1/reorderVAR.m}
+\inputLISTING{v4.1/rescaleFAVAR.m}{v4.1/rescaleFAVAR.m}
+\inputLISTING{v4.1/rfvar3.m}{v4.1/rfvar3.m}
+\inputLISTING{v4.1/savefigure_pdf.m}{v4.1/savefigure\_pdf.m}
+\inputLISTING{v4.1/shade.m}{v4.1/shade.m}
+\inputLISTING{v4.1/sign2matrix.m}{v4.1/sign2matrix.m}
+\inputLISTING{v4.1/standard.m}{v4.1/standard.m}
+\inputLISTING{v4.1/var2ss.m}{v4.1/var2ss.m}
+\inputLISTING{v4.1/varprior.m}{v4.1/varprior.m}
+\inputLISTING{cmintools/bfgsi.m}{cmintools/bfgsi.m}
+\inputLISTING{cmintools/csminit.m}{cmintools/csminit.m}
+\inputLISTING{cmintools/csminwel.m}{cmintools/csminwel.m}
+\inputLISTING{cmintools/csolve.m}{cmintools/csolve.m}
+\inputLISTING{cmintools/initialize_mh.m}{cmintools/initialize\_mh.m}
+\inputLISTING{cmintools/numgrad.m}{cmintools/numgrad.m}
+\end{document}
